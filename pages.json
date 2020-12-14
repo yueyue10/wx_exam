@@ -1,0 +1,50 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "考试"
+		}
+	}, {
+		"path": "pages/exam/exam",
+		"style": {
+			"navigationBarTitleText": "考试管理",
+			"enablePullDownRefresh": false
+		}
+	}, {
+		"path": "pages/exam/paper",
+		"style": {
+			"navigationBarTitleText": "试卷",
+			"enablePullDownRefresh": false
+		}
+	}, {
+		"path": "pages/mine/mine",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+				"pagePath": "pages/exam/exam",
+				"iconPath": "static/ic_improve.png",
+				"selectedIconPath": "static/ic_improve_sel.png",
+				"text": "考试管理"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/ic_mine.png",
+				"selectedIconPath": "static/ic_mine_sel.png",
+				"text": "我的"
+			}
+		]
+	}
+}
