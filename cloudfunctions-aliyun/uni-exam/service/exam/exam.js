@@ -107,6 +107,7 @@ module.exports = class ExamService extends Service {
 
 	// 创建用户考试试卷
 	async createExam(examObj, uniIdToken) {
+		delete examObj._id
 		let errMsg = uniIdToken ? "" : "需要uniIdToken参数";
 		errMsg = examObj.paperId ? "" : "需要paperId参数";
 		if (errMsg)

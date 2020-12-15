@@ -2,8 +2,8 @@
 	<view class="container">
 		<view class="top-layout">
 			<image class="top-image"></image>
-			<view class="top-info" @click="">
-				<image class="user-icon" :src="avatarUrl"></image>
+			<view class="top-info">
+				<image class="user-icon" :src="avatarUrl" @click="onUserClick"></image>
 				<view>{{userInfo.username}}</view>
 			</view>
 		</view>
@@ -21,6 +21,9 @@
 </template>
 
 <script>
+	import {
+		home
+	} from "../../router.js"
 	export default {
 		data() {
 			return {
@@ -49,6 +52,21 @@
 		methods: {
 			onItemClick(item) {
 
+			},
+			onUserClick() {
+				uni.showModal({
+					title: "提示",
+					content: "退出登录",
+					success: (res) => {
+						// alert(JSON.stringify(res))
+						if (res.confirm) {
+							uni.removeStorageSync("userInfo")
+							uni.reLaunch({
+								url: home
+							})
+						}
+					}
+				})
 			}
 		}
 	}
