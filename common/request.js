@@ -2,7 +2,7 @@ import {
 	home
 } from "../router.js"
 export function request(action, data, {
-	functionName = 'uni-admin',
+	functionName = 'uni-exam',
 	showModal = true
 } = {}) {
 	let userToken = uni.getStorageSync("userToken")

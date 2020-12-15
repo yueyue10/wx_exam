@@ -13,8 +13,8 @@ module.exports = class UserController extends Controller {
 			password
 		})
 	}
-	
-	async userLogin(){
+
+	async userLogin() {
 		const {
 			username,
 			password
@@ -24,7 +24,7 @@ module.exports = class UserController extends Controller {
 			password
 		})
 	}
-	
+
 	async register() {
 		const {
 			username,
@@ -47,5 +47,8 @@ module.exports = class UserController extends Controller {
 	async logout() {
 		return this.service.user.logout(this.ctx.event.uniIdToken)
 	}
-
+	
+	async getUserList() {
+		return this.service.user.getUserList()
+	}
 }
