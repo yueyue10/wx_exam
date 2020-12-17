@@ -7,7 +7,7 @@
 	}, {
 		"path": "pages/exam/exam",
 		"style": {
-			"navigationBarTitleText": "考试管理",
+			"navigationBarTitleText": "考试列表",
 			"enablePullDownRefresh": false
 		}
 	}, {
@@ -21,6 +21,20 @@
 		"style": {
 			"navigationStyle": "custom"
 		}
+	}, {
+		"path": "pages/mine/mtest",
+		"style": {
+			"navigationBarTitleText": "我的考试",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/mine/aboutus",
+		"style": {
+			"navigationBarTitleText": "关于我们",
+			"enablePullDownRefresh": false
+		}
+
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -37,7 +51,7 @@
 				"pagePath": "pages/exam/exam",
 				"iconPath": "static/ic_improve.png",
 				"selectedIconPath": "static/ic_improve_sel.png",
-				"text": "考试管理"
+				"text": "考试"
 			},
 			{
 				"pagePath": "pages/mine/mine",

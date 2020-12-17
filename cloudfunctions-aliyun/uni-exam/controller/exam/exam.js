@@ -31,4 +31,10 @@ module.exports = class ExamController extends Controller {
 		} = this.ctx.data
 		return this.examServie.createExam(examObj, uniIdToken)
 	}
+	async getUserExams() {
+		const {
+			uniIdToken
+		} = this.ctx.data
+		return this.examServie.getUserExams(uniIdToken)
+	}
 }

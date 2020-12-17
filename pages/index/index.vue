@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
-		<view>登录</view>
+		<!-- <view>登录</view> -->
 		<view style="margin-top: 50px;">
 			<view class="hor-layout-center">
 				<view style="margin-right: 10px;">账号</view>

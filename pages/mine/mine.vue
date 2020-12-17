@@ -22,7 +22,9 @@
 
 <script>
 	import {
-		home
+		home,
+		mtest,
+		aboutus
 	} from "../../router.js"
 	export default {
 		data() {
@@ -32,15 +34,11 @@
 				myList: [{
 					title: '我的考试',
 					icon: 'paperclip',
-					url: "aboutme"
+					url: mtest
 				}, {
-					title: '访客记录',
+					title: '关于我们',
 					icon: 'help',
-					url: "visitors"
-				}, {
-					title: '个人网址',
-					icon: 'email',
-					weburl: 'https://zhaoyj.work'
+					url: aboutus
 				}],
 			}
 		},
@@ -51,7 +49,10 @@
 		},
 		methods: {
 			onItemClick(item) {
-
+				// alert(JSON.stringify(item))
+				uni.navigateTo({
+					url: item.url
+				})
 			},
 			onUserClick() {
 				uni.showModal({

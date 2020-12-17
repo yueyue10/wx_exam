@@ -11,7 +11,12 @@
 				</view>
 			</view>
 		</block>
-		<view v-if="examList.length<=0" style="margin-top: 100px;width: 100%;text-align: center;">暂无数据</view>
+		<view v-if="examList.length<=0" class="no-data-view" style="color: #777777;">
+			<view class="hor-layout-center" style="width: fit-content;margin: auto;">
+				<uni-icons type="help" size="20" style="margin-right: 5px;" color="#777777"></uni-icons>
+				<text>暂无考试</text>
+			</view>
+		</view>
 	</view>
 </template>
 
@@ -54,11 +59,22 @@
 </script>
 
 <style>
+	page {
+		background: #F4F4FA;
+	}
+
 	.exam-list {
 		margin: 10px;
 		padding: 15px;
 		background: #e8e8e8;
 		border-radius: 7px;
 		font-size: small;
+	}
+
+	.no-data-view {
+		position: fixed;
+		top: 45vh;
+		width: 100%;
+		text-align: center;
 	}
 </style>
