@@ -3,10 +3,15 @@
 // 配置教程参考：https://uniapp.dcloud.net.cn/uniCloud/quickstart?id=runparam
 // "action": "exam/exams/getUserExamIngPapers",
 // "action": "exam/exam/getExamPapers",
+// "action": "exam/exam/createExam",
 //	"uniIdToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI1ZmRhYzc4N2UyYzFlZTAwMDE5NzJkYWQiLCJpYXQiOjE2MDgxOTcwNzcsImV4cCI6MTYwODIwNzg3N30.MuSFtWuKj0UqJnaVv5GgLBmGYH3_mkTPoA83E5DoNBQ"
 {
-	"action": "exam/exams/getUserExamIngPapers",
+	"action": "exam/exams/createExam",
 	"data": {
-		"uniIdToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI1ZmRhYzc3NTc4NzdlNTAwMDE4ZDFlZTciLCJpYXQiOjE2MDgyMDEwOTMsImV4cCI6MTYwODIxMTg5M30.Kix8dl9Vo93TfHloZzQV9hX56hyptQTYkaCX6PexPQQ"
+		"examObj": {
+			"_id": "5fdb2a6e1ee4f500018b1841",
+			"paperId": "5fdb2a6e1ee4f500018b1841"
+		},
+		"uniIdToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI1ZmRhYzc2NGUyYzFlZTAwMDE5NzJkNWUiLCJpYXQiOjE2MDgyMDQyOTgsImV4cCI6MTYwODIxNTA5OH0.1MuoST26wqZB2UxtU2yI7zunxuP1FD_U23WZicEMfjw"
 	}
 }
